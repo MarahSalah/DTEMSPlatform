@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=PT+Serif+Caption&display=swap');
+@import 'tailwindcss';
+
+html, body, #root { height: 100%; }
+* { font-family: 'Manrope', sans-serif; }
+
+/* ── Theme tokens ─────────────────────────────────────────────────────── */
+:root {
+  --c-bg:           #ffffff;
+  --c-surface:      #F8FAFC;
+  --c-card:         #ffffff;
+  --c-border:       #E4E7EB;
+  --c-text:         #1F2937;
+  --c-text-muted:   #6B7280;
+  --c-text-sub:     #4B5563;
+  --c-heading:      #071E3D;
+  --c-heading-auth: #0D1117;
+  --c-primary:      #054A9E;
+  --c-primary-hov:  #0358BC;
+  --c-accent:       #FE871E;
+  --c-nav-bg:       rgba(255,255,255,.95);
+  --c-nav-border:   rgba(3,5,7,.07);
+  --c-input-bg:     #FAFBFC;
+  --c-focus-border: #054A9E;
+  --c-focus-shadow: rgba(5,74,158,.09);
+  --c-auth-shell:   #F0F2F4;
+  --c-reg-shell:    #F5F7FA;
+  --c-reg-hdr:      rgba(245,247,250,.95);
+  --c-sec-div:      #F0F2F4;
+}
+
+[data-theme="dark"] {
+  --c-bg:           #0B0D0F;
+  --c-surface:      #15181C;
+  --c-card:         #15181C;
+  --c-border:       #2A3038;
+  --c-text:         #F8FAFC;
+  --c-text-muted:   #94A3B8;
+  --c-text-sub:     #94A3B8;
+  --c-heading:      #F8FAFC;
+  --c-heading-auth: #F8FAFC;
+  --c-primary:      #61A6FA;
+  --c-primary-hov:  #7BB8FB;
+  --c-accent:       #FE9D47;
+  --c-nav-bg:       rgba(11,13,15,.97);
+  --c-nav-border:   rgba(255,255,255,.04);
+  --c-input-bg:     #15181C;
+  --c-focus-border: #61A6FA;
+  --c-focus-shadow: rgba(97,166,250,.12);
+  --c-auth-shell:   #0B0D0F;
+  --c-reg-shell:    #0B0D0F;
+  --c-reg-hdr:      rgba(11,13,15,.97);
+  --c-sec-div:      #2A3038;
+}
+
+@theme inline {
+  --color-brand-primary:   #054A9E;
+  --color-brand-secondary: #113669;
+  --color-brand-accent:    #FE871E;
+  --color-brand-bg:        #F0F2F4;
+  --color-brand-text:      #030507;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
